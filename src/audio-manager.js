@@ -14,7 +14,7 @@ export class AudioManager {
       this.master = this.context.createGain();
       this.master.gain.value = this.muted ? 0 : 0.11;
       this.master.connect(this.context.destination);
-      this.music = new Audio("/assets/ningjing-xianshi.mp3");
+      this.music = new Audio("./assets/ningjing-xianshi.mp3");
       this.music.loop = true;
       this.music.preload = "auto";
       this.musicGain = this.context.createGain();
